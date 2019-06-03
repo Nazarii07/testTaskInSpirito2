@@ -1,33 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    font-family: "Open Sans", serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    background: rgba(43,42,42,1);
+    background: -moz-linear-gradient(45deg, rgba(43,42,42,1) 0%, rgba(43,42,42,1) 11%, rgba(48,46,143,1) 36%, rgba(15,217,214,1) 58%, rgba(195,204,29,1) 81%, rgba(252,252,252,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(43,42,42,1)), color-stop(11%, rgba(43,42,42,1)), color-stop(36%, rgba(48,46,143,1)), color-stop(58%, rgba(15,217,214,1)), color-stop(81%, rgba(195,204,29,1)), color-stop(100%, rgba(252,252,252,1)));
+    background: -webkit-linear-gradient(45deg, rgba(43,42,42,1) 0%, rgba(43,42,42,1) 11%, rgba(48,46,143,1) 36%, rgba(15,217,214,1) 58%, rgba(195,204,29,1) 81%, rgba(252,252,252,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(43,42,42,1) 0%, rgba(43,42,42,1) 11%, rgba(48,46,143,1) 36%, rgba(15,217,214,1) 58%, rgba(195,204,29,1) 81%, rgba(252,252,252,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(43,42,42,1) 0%, rgba(43,42,42,1) 11%, rgba(48,46,143,1) 36%, rgba(15,217,214,1) 58%, rgba(195,204,29,1) 81%, rgba(252,252,252,1) 100%);
+    background: linear-gradient(45deg, rgba(43,42,42,1) 0%, rgba(43,42,42,1) 11%, rgba(48,46,143,1) 36%, rgba(15,217,214,1) 58%, rgba(195,204,29,1) 81%, rgba(252,252,252,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2a2a', endColorstr='#fcfcfc', GradientType=1 );
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.info{
+    width: 1200px;
 }
 
-.App-link {
-  color: #61dafb;
+th,td{
+    text-align: center;
+    color: rgb(83, 83, 72);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main{
+    display: flex;
+    justify-content: flex-end;
+}
+
+input,select{
+    margin: 0 15px 0 5px;
+    
+}
+label{
+    color: rgb(177, 98, 98);
+    font-weight: 800;
+}
+.ok{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(38, 209, 124);
+    color: aliceblue;
+       
+}
+
+.canc{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: brown;
+    color: aliceblue;
+}
+.button{
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
 }
